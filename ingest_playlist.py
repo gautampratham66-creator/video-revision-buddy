@@ -17,7 +17,7 @@ load_dotenv()
 SOURCES = [
     "PASTE_YOUR_PLAYLIST_LINK_HERE",
 ]
-MAX_VIDEOS = 10          # safety limit per run
+MAX_VIDEOS = 400           # safety limit per run
 # -----------------------------------------------------
 
 COLLECTION_NAME = "video_notes_ml"
