@@ -23,7 +23,8 @@ st.markdown(
   --paper:#F3F6FA; --ink:#13203A; --cobalt:#2B50F5; --mark:#FFD84D;
   --muted:#5C6B82; --line:#D9E1EC; --card:#FFFFFF;
 }
-html, body, [class*="st-"], .stApp { font-family:'IBM Plex Sans', system-ui, sans-serif; }
+html, body, .stApp, .stApp p, .stApp li, .stApp label, .stApp input, .stApp button, .stApp textarea { font-family:'IBM Plex Sans', system-ui, sans-serif; }
+[data-testid="stIconMaterial"] { font-family:'Material Symbols Rounded' !important; }
 .stApp { background: var(--paper); color: var(--ink); }
 #MainMenu, footer, header[data-testid="stHeader"] { visibility:hidden; height:0; }
 .block-container { max-width: 1120px; padding-top: 2.2rem; padding-bottom: 4rem; }
