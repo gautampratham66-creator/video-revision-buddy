@@ -15,9 +15,9 @@ load_dotenv()
 # ---------------- put your links here ----------------
 # Playlist links and single video links can be mixed.
 SOURCES = [
-    "PASTE_YOUR_PLAYLIST_LINK_HERE",
+    "https://youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&si=uQkhchcxYm0e8_J3",
 ]
-MAX_VIDEOS = 400           # safety limit per run
+MAX_VIDEOS = 400        # safety limit per run
 # -----------------------------------------------------
 
 COLLECTION_NAME = "video_notes_ml"
