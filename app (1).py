@@ -231,12 +231,14 @@ question = st.text_input(
 
 row = st.columns([1.2, 3, 3, 3])
 go = row[0].button("Find it", type="primary")
-auto = False
+def pick_example(text):
+    st.session_state["q"] = text
+    st.session_state["auto"] = True
+
+
 for col, ex in zip(row[1:], examples):
-    if col.button(ex, key=f"ex_{ex}", use_container_width=True):
-        st.session_state["q"] = ex
-        question = ex
-        auto = True
+    col.button(ex, key=f"ex_{ex}", use_container_width=True, on_click=pick_example, args=(ex,))
+auto = st.session_state.pop("auto", False)
 
 if (go or auto) and question.strip():
     with st.spinner("Searching the lecture..."):
